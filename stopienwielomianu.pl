@@ -21,7 +21,7 @@ Definicja: rekurencja strukturalna
 % spełniony, gdy N jest stopniem wielomianu W
 % zmiennej X o współczynnikach liczbowych
 
-	st_wielomian(X,x,1).
+	st_wielomian(X,X,1).
 	st_wielomian(W,_,0):-number(W).
 	st_wielomian(-W,X,N):-st_wielomian(W,X,N).
 	st_wielomian(W1+W2,X,N):-st_wielomian(W1,X,N1),
