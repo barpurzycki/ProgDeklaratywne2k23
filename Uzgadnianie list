@@ -1,0 +1,32 @@
+Zadaniem jest uzgodnić ze sobą dwie listy (a jak się nie da, to napisać dlaczego) - będzie na kolosie.
+
+
+1. [X | T]     [a, [b], [c]]
+
+(podstawiamy za X głowę drugiej listy, a za T ogon drugiej listy)
+
+X = a, T = [[b], [c]]
+
+2. [a, b]      [X, Y | T]
+
+X = a, Y = b, T = []
+
+3. [f(X), c, Z]      [f(g(a)), Y, f(Y)]
+
+X = g(a), Y = c, Z = f(c)
+
+4. [[a,b], c]     [X | T]
+
+X = [a,b], T = [c]
+
+5. [X, Y | T]     [[a,b]]
+
+Nie da się uzgodnić, ponieważ druga lista ma jeden element
+
+6. [g(Z), f(a), X]      [X, Z, g(Y)]
+
+X = g(f(a)), Z = f(a), Y = f(a)
+
+7. [Z, f(g(X)), a]      [g(X), f(g(b)), Z]
+
+Z = g(b), X = b, a i g(b) nie da się uzgodnić
