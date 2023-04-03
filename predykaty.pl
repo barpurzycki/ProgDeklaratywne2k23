@@ -27,3 +27,5 @@
 				
 		kwadrat(X,Y):-Y is X*X.
 		kwadrat_listy(L1,L2):-maplist(kwadrat,L1,L2).
+		mniejszeo1(X,Y):- Y is X-1.
+		lista_mniejszao1(L1,L2):-maplist(mniejszeo1(L1),L2).
